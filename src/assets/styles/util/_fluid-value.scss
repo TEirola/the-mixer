@@ -1,0 +1,23 @@
+$minimumFluidTypeViewportWidth: 375px;
+$maximumFluidTypeViewportWidth: 1440px;
+
+/*
+ * https://websemantics.uk/tools/responsive-font-calculator/
+ */
+@function fluid-value(
+  $minValue,
+  $maxValue,
+  $minViewport: $minimumFluidTypeViewportWidth,
+  $maxViewport: $maximumFluidTypeViewportWidth
+) {
+  $valueDifference: #{$maxValue - $minValue};
+  $viewportDifference: #{$maxViewport - $minViewport};
+  $baseValue: #{$minValue / $rootFontSize};
+
+  $valueFunction: calc(
+    #{$baseValue}rem + #{$valueDifference} * ((100vw - #{$minViewport}px) / #{$viewportDifference})
+  );
+
+  // CSS math function names must be uppercase to prevent collision with scss math function names
+  @return Min(Max(#{$minValue}px, #{$valueFunction}), #{$maxValue}px);
+}

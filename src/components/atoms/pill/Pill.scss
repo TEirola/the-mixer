@@ -1,0 +1,14 @@
+.pill {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  //   min-height: 32px;
+  min-width: 32px;
+  width: fit-content;
+  border-radius: 32px;
+  color: #000;
+  padding-inline: 1rem;
+  vertical-align: middle;
+  margin-block-end: 1rem;
+}

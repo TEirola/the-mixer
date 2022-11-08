@@ -1,0 +1,18 @@
+.list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  justify-items: center;
+}
+
+.list-item {
+  max-width: 50vw;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .list {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}

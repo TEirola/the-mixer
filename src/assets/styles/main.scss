@@ -1,0 +1,25 @@
+$rootFontSize: 16;
+@import "./util/rem-value";
+@import "./util/fluid-value";
+@import "./base.scss";
+@import "./heading.scss";
+
+#app {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+}

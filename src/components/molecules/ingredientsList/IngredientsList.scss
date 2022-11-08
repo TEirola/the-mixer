@@ -1,0 +1,16 @@
+.ingredients-list {
+  text-indent: 1rem;
+}
+
+.ingredients-list-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  .text:nth-child(odd) {
+    font-style: italic;
+  }
+}
+
+.ingredients-list-header {
+  font-weight: bold;
+}

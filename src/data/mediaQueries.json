@@ -1,0 +1,25 @@
+{
+  "mediaQueries": {
+    "XSMALL": "'(max-width: 479px)'",
+    "SMALL": "'(min-width: 480px)'",
+    "MEDIUM": "'(min-width: 768px)'",
+    "LARGE": "'(min-width: 1024px)'",
+    "XLARGE": "'(min-width: 1440px)'",
+    "XLARGE_CUSTOM": "'(min-width: 1640px)'"
+  },
+  "viewport": {
+    "SMALL": 480,
+    "MEDIUM": 768,
+    "LARGE": 1024,
+    "XLARGE": 1440,
+    "XLARGE_CUSTOM": 1640
+  },
+  "deviceState": {
+    "XSMALL": 0,
+    "SMALL": 1,
+    "MEDIUM": 2,
+    "LARGE": 3,
+    "XLARGE": 4,
+    "XLARGE_CUSTOM": 5
+  }
+}
