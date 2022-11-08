@@ -1,6 +1,6 @@
 # The Mixer
 
-The application is created using Vue together with Volar and Pinia for state managment
+The application is created using Vue together with Volar and Pinia for state managment.
 
 ## Recommended IDE Setup
 
