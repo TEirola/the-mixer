@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { RouterLink } from "vue-router";
 import Heading from "../../atoms/heading/Heading.vue";
 import Image from "../../atoms/image/Image.vue";
 import Pill from "../../atoms/pill/Pill.vue";
@@ -14,7 +13,7 @@ defineProps<{
 <style src="./CocktailsListItem.scss" lang="scss"></style>
 
 <template>
-  <RouterLink :to="`/cocktail-detail/${id}`" class="list-item">
+  <router-link :to="`/cocktail-detail/${id}`" class="list-item">
     <Image :src="image" />
 
     <div class="list-item-content">
@@ -23,5 +22,5 @@ defineProps<{
         {{ copy }}
       </Heading>
     </div>
-  </RouterLink>
+  </router-link>
 </template>
