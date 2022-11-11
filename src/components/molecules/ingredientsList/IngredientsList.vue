@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, nextTick, onMounted, ref } from "vue";
+import { computed, onMounted, ref } from "vue";
 import Text from "../../atoms/text/Text.vue";
 
 type IngredientsList = Array<{ measurement: string; ingredient: string }>;
@@ -26,12 +26,8 @@ onMounted(() => {
         ingredient: ingredient as string,
       });
     });
-
-    console.log({ listOfIngredients }, listOfIngredients.value);
   }, 100);
 });
-
-console.log({ listOfIngredients }, listOfIngredients.value);
 </script>
 <style src="./IngredientsList.scss" lang="scss"></style>
 

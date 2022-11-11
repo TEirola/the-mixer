@@ -1,13 +1,11 @@
-.ingredients-list {
-  text-indent: 1rem;
-}
-
 .ingredients-list-item {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  gap: 1rem;
 
   .text:nth-child(odd) {
     font-style: italic;
+    white-space: nowrap;
   }
 }
 
