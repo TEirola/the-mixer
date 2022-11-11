@@ -1,6 +1,5 @@
 .list-item {
   background: var(--vt-c-white-soft);
-  // border-radius: 8px;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -41,7 +40,6 @@
 
 .list-title {
   text-align: start;
-  color: rgb(76, 57, 159);
 }
 
 @media (hover: hover) {
