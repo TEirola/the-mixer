@@ -26,3 +26,9 @@ npm run dev
 ```sh
 npm run lint
 ```
+
+# Todo list:
+
+- Add pagination/lazy loading to the list items
+- Add animations for the list items when scrolled in the viewport
+- Improve active filter value validation
