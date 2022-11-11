@@ -1,7 +1,8 @@
 # The Mixer
 
 The application is created using Vue together with Volar and Pinia for state managment. Gsap is used for some basic animations on the application.
-To use the application, clone this project and follow the steps below.
+
+To use the application, you can visit https://the-mixer.vercel.app/, otherwise you can also clone this project and follow the steps below.
 
 ## Recommended IDE Setup
 
