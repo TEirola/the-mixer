@@ -24,10 +24,12 @@ function setCategory(category: string | null) {
   return router.push({ query: { category: category } });
 }
 
-function animateNav() {
-  const filteredValue = document.querySelector(
+async function animateNav() {
+  const filteredValue = (await document.querySelector(
     ".nav-list-button.active"
-  ) as HTMLElement;
+  )) as HTMLElement;
+
+  if (!filteredValue) return;
 
   gsap
     .timeline()
@@ -77,14 +79,14 @@ watch(route, (value) => {
 
   setTimeout(() => {
     animateNav();
-  }, 100);
+  }, 500);
 });
 
 onMounted(() => {
   setTimeout(() => {
     animateNav();
     isOverflown.value = isNavOverflown();
-  }, 100);
+  }, 500);
 
   Draggable.create(".nav-list", {
     bounds: ".homepage",
