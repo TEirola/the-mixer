@@ -1,3 +1,3 @@
 @function rem-value($pixelValue) {
-  @return #{$pixelValue / $rootFontSize}rem;
+  @return #{calc($pixelValue / $rootFontSize)}rem;
 }

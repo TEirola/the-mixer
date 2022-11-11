@@ -12,7 +12,7 @@ $maximumFluidTypeViewportWidth: 1440px;
 ) {
   $valueDifference: #{$maxValue - $minValue};
   $viewportDifference: #{$maxViewport - $minViewport};
-  $baseValue: #{$minValue / $rootFontSize};
+  $baseValue: calc($minValue / $rootFontSize);
 
   $valueFunction: calc(
     #{$baseValue}rem + #{$valueDifference} * ((100vw - #{$minViewport}px) / #{$viewportDifference})
