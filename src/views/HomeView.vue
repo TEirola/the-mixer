@@ -52,11 +52,9 @@ function animateNav() {
 
 const isNavOverflown = () => {
   const navElement = document.querySelector(".nav-list-container");
-  console.log({ navElement });
   if (!navElement) return false;
 
   const { clientWidth, scrollWidth } = navElement;
-  console.log(scrollWidth > clientWidth);
   return scrollWidth > clientWidth;
 };
 
