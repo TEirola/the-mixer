@@ -60,7 +60,12 @@ const isNavOverflown = () => {
   return scrollWidth > clientWidth;
 };
 
-function getThePosition() {
+function getDragPosition(this: {
+  endX: number;
+  bounds: string;
+  type: "x";
+  onDrag: () => void;
+}) {
   const navElement = document.querySelector(".nav-list-container");
   if (-(navElement as any)?._gsMaxScrollX === this.endX)
     isOverflown.value = false;
@@ -86,7 +91,7 @@ onMounted(() => {
   Draggable.create(".nav-list", {
     bounds: ".homepage",
     type: "x",
-    onDrag: getThePosition,
+    onDrag: getDragPosition,
   });
 });
 
